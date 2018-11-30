@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+input[type=text] {
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+
+input[type=text]:focus {
+    border: 3px solid #555;
+}
+input[type=password]:focus {
+    border: 3px solid #555;
+}
+label {
+    text-align: center;
+    color: #4CAF50;
+}
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: middle;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+div {
+	width: 50%;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+</br>
+</br>
+</br>
+
+<center>
+<div>
+<form action="/adding.html" method="post">
+  <fieldset>
+    <legend>New Entry Input</legend>
+        <label for="cid">Customer Id</label>
+        <input type="text" id="Coustomer Id" name="cid" value="11654">
+        </br>
+        </br>
+        <label for="in_gender">Gender</label>
+        <input type="text" id="in_gender" placeholder="Select Gender" name="gender" list="gender_list" value="m">
+        <datalist id="gender_list">
+         <option value="m">Male</option>
+          <option value="f">Female</option>
+        </datalist>
+        <br>
+        <br>
+        <label for="in_age">Age</label>
+        <input type="text" id="in_age" placeholder="Enter Age" name="age" value="32" >
+        <br>
+        <br>
+        <label for="in_profile">Profile</label>
+        <input type="text" id="in_profile" placeholder="Select Profile" name="profile" list="profile_list" value="J">
+        <datalist id="profile_list">
+         <option value="S"> Student </option>
+        <option value="J">Job </option>
+        <option value="B"> Business </option>
+        <option value="N"> Not working </option>
+        </datalist>
+        <br>
+        <br>
+        <label for="in_store">Store</label>
+        <input type="text" id="in_store" placeholder="Select Store" name="store" list="store_list" value="m" value="S">
+        <datalist id="store_list">
+         <option value="S"> Store </option>
+        <option value="O">Online </option>
+        </datalist>
+        <br>
+        <br>
+        <label for="in_product">Product ID</label>
+        <input type="text" id="in_product" placeholder="Select Product ID" name="product" list="product_list" value="Laptop">
+        <datalist id="product_list">
+         <option value="Laptop"> Laptop  </option>
+        <option value="Desktop"> Desktop </option>
+        <option value="Gaming"> Gaming </option>
+        <option value="Server"> Server </option>
+        </datalist>
+        <br>
+        <br>
+        <label for="in_productt">Product Type</label>
+        <input type="text" id="in_productt" placeholder="Select Product ID" name="product" list="product_list" value = "1">
+        <datalist id="product_list">
+         <option value="1"> Laptop  </option>
+        <option value="2"> Desktop </option>
+        <option value="3"> Gaming </option>
+        <option value="4"> Server </option>
+        </datalist>
+        <br>
+        <br>
+        <label for="in_model">Model ID</label>
+        <input type="text" id="in_model" placeholder="Select Model ID" name="model" list="model_list" value="14">
+        <datalist id="model_list">
+         <option value="11"> 11  </option>
+        <option value="111"> 111  </option>
+        <option value="12"> 12 </option>
+        <option value="13"> 13 </option>
+        <option value="14"> 14 </option>
+        <option value="21"> 21 </option>
+        <option value="22"> 22 </option>
+        <option value="31"> 31 </option>
+        <option value="41"> 41 </option>
+        <option value="42"> 42 </option>
+        </datalist>
+        <br>
+        <br>
+        <label for="in_modelm">Model type</label>
+        <input type="text" id="in_modelm" placeholder="Select Model ID" name="model" list="model_list" value="Precision 5520">
+        <br>
+        <br>
+        <label for="in_country">Country</label>
+        <input type="text" id="in_country" placeholder="Select Country" name="country" list="country_list" value=>
+        <datalist id="product_list">
+        <option value="1"> 1  </option>
+        <option value="2"> 2 </option>
+        <option value="3"> 3 </option>
+        </datalist>
+        <br>
+        <br>
+        <label for="in_area">Area</label>
+        <input type="text" id="in_area" placeholder="Select Area" name="area" list="area_list">
+        <datalist id="area_list">
+         <option value="1"> 1  </option> <option value="2"> 2 </option>
+          <option value="3"> 3 </option>  <option value="4"> 4 </option>
+          <option value="5"> 5 </option>  <option value="6"> 6 </option>
+          <option value="7"> 7 </option>  <option value="8"> 8 </option>
+        </datalist>
+        <br>
+        <br>
+        <label for="in_city">City</label>
+        <input type="text" id="in_city" placeholder="Select City" name="city" list="city_list">
+        <datalist id="city_list">
+          <option value="1"> 1  </option> <option value="2"> 2 </option>
+          <option value="3"> 3 </option>  <option value="4"> 4 </option>
+          <option value="5"> 5 </option>  <option value="6"> 6 </option>
+          <option value="7"> 7 </option>  <option value="8"> 8 </option>
+          <option value="9"> 9  </option> <option value="10"> 10 </option>
+          <option value="11"> 11 </option>  <option value="12"> 12 </option>
+          <option value="13"> 13 </option>  <option value="14"> 14 </option>
+          <option value="15"> 15 </option>  <option value="16"> 16 </option>
+          <option value="17"> 17  </option> <option value="18"> 18 </option>
+          <option value="19"> 19 </option>  <option value="20"> 20 </option>
+          <option value="21"> 21 </option>  <option value="22"> 22 </option>
+          <option value="23"> 23 </option>  <option value="24"> 24 </option>
+         </datalist>
+         <br>
+         <br>
+        <label for="in_city">Month</label>
+        <input type="text" id="in_month" placeholder="Select Month" name="month" list="month_list">
+        <datalist id="month_list">
+         <option value="January"> January  </option> <option value="February"> February </option>
+                            <option value="March"> March </option> <option value="April"> April </option> <option value="May"> May </option>
+                            <option value="June"> June </option>  <option value="July"> July </option>
+                            <option value="August"> August  </option> <option value="September"> September </option>
+                            <option value="October"> October </option>  
+                            <option value="November"> November </option>
+                            <option value="December"> December </option>
+                            </datalist>
+                            <br>
+                            <br>
+         <label for="in_city">Year</label>
+        <input type="text" id="in_year" placeholder="Select Year" name="year" list="year_list">
+        <datalist id="year_list">
+        <option value="2013"> 2013  </option> <option value="2013"> 2014 </option>
+          <option value="2015"> 2015 </option>  <option value="2016"> 2016 </option>
+          <option value="2017"> 2017 </option>  <option value="2018"> 2018 </option>
+          </datalist>
+
+
+        <br>
+        <br>
+        
+        <type type="submit" name="submit" value="submit>
+    </fieldset>
+</form>
+</div>
+</center>
+</body>
+</html>
